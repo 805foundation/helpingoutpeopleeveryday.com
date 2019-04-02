@@ -1,0 +1,55 @@
+body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  border-left: 0;
+  font-family: "Montserrat", sans-serif;
+}
+.border-0 {
+  border-width: 0em;
+}
+
+.bg-hope {
+  background-color: #43c4ef;
+}
+
+.text-hope {
+  color: #262626;
+}
+.text-hope:hover {
+  color: #43c4ef;
+  transition-duration: 0.6s;
+}
+
+.btn-foundation {
+  border-width: 1px;
+  border-color: #ffffff;
+  background-color: #ffffff;
+  color: #4d4d4d;
+}
+.btn-foundation:hover {
+  border-width: 1px;
+  border-color: #43c4ef;
+  background-color: #43c4ef;
+  color: #ffffff;
+}
+.btn-outline-foundation {
+  border-width: 1px;
+  border-color: #43c4ef;
+  background-color: transparent;
+  color: #43c4ef;
+}
+.btn-outline-foundation:hover {
+  background-color: #43c4ef;
+  color: #ffffff;
+  transition-duration: 0.5s;
+}
+
+.bg-carousel {
+  height: 50vh;
+  min-height: 300px;
+  background-image: url("/img/masthead/about.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
