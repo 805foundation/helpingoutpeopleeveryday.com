@@ -1,0 +1,31 @@
+{{ define "main" }}
+<div class="container-fluid text-center bg-sky text-white">
+  <div class="py-5"></div>
+  <div class="py-5"></div>
+
+  <h6 class="">Press Room</h6>
+  <h1 class="text-uppercase font-weight-bold">
+    there is always something <br> happening here
+  </h1>
+
+  <div class="py-5"></div>
+</div>
+
+<div class="container">
+    <div class="py-5"></div>
+    <h1 class="text-uppercase">press releases</h1>
+</div>
+
+<div class="container">
+    {{ range.Pages }}
+    <div class="card border-0">
+        <div class="card-body">
+            <h6 class="card-text">{{ .Params.pressDate }}</h6>
+            <h2 class="card-title">{{ .Title }}</h2>
+            <a href="{{ .URL }}" class="text-decoration-none text-alpha">Read More</a>
+        </div>
+    </div>
+    <hr>
+    {{ end }}
+</div>
+{{ end }}

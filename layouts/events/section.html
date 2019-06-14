@@ -1,0 +1,51 @@
+{{ define "main" }}
+
+<div class="container-fluid text-center bg-sky text-white">
+  <div class="py-5"></div>
+  <div class="py-5"></div>
+
+  <h6 class="">Events</h6>
+  <h1 class="text-uppercase font-weight-bold">
+    we are always doing something
+  </h1>
+
+  <div class="py-5"></div>
+</div>
+
+<div class="container">
+  <div class="py-5"></div>
+  <h1 class="text-uppercase">Upcoming Events</h1>
+  <div class="py-3"></div>
+</div>
+
+{{ range.Pages }}
+<div class="container">
+  <div class="row align-items-center">
+    <div class="col-lg-2 col-12">
+      <img
+        class="img-fluid mb-3 mb-lg-0"
+        src="{{ .Params.eventGraphic }}"
+        alt=""
+      />
+    </div>
+    <div class="col-lg-10 col-12">
+      <div class="text-left">
+        <h5 class="text-black-50 text-monospace">{{ .Title }}</h5>
+        <h4 class="card-title">@ {{ .Params.eventLocation }}</h4>
+        <h4 class="">
+          {{ .Params.oneLineDescription }}
+        </h4>
+        <a href="{{ .Params.externalLink }}" target="_blank" class="">
+          <button class="btn btn-outline-alpha px-5">RSVP</button>
+        </a>
+      </div>
+    </div>
+  </div>
+  <hr />
+</div>
+
+{{ end }}
+
+<div class="py-5"></div>
+
+{{ end }}

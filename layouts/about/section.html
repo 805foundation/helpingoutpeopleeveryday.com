@@ -1,0 +1,122 @@
+{{ define "main" }}
+
+<img
+  src="/img/masthead/board.png"
+  width="100%"
+  alt=""
+  class="img-thumnail"
+/>
+
+<div class="container">
+  <div class="py-5"></div>
+  <div class="card-deck">
+    <div class="card border-0 p-3">
+      <div class="card-body">
+        <h1 class="card-title">
+          Transforming Lhdsfahl aldhfla lahfdla
+        </h1>
+        <h6 class="card-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis
+          odio non risus pellentesque interdum vitae id turpis. In eu tempus
+          velit. Nunc ac felis et ipsum suscipit iaculis nec nec purus. Proin
+          iaculis, lorem tempor consectetur efficitur, risus enim placerat nisl,
+          ac egestas eros nulla rutrum nunc. Vestibulum orci risus, vulputate
+          eget eros vel, dapibus euismod erat. Proin ac rhoncus risus. Sed augue
+          nunc, ultrices quis eros ac, vestibulum dictum nisl. Curabitur
+          vehicula, est vitae aliquet lobortis, urna ante dapibus nisi, at porta
+          velit orci sit amet augue.
+        </h6>
+      </div>
+    </div>
+    <div class="card border-0 col-4">
+      <h6 class="text-center text-uppercase bg-sky py-2">
+        See our impact
+      </h6>
+      <img src="/img/masthead/ribbon.png" alt="" class="card-img-top" />
+      <p class="text-small">
+        Enter your email to follow us on our journey as we...
+      </p>
+    </div>
+  </div>
+  <div class="py-5"></div>
+</div>
+
+<div class="container-fluid bg-light">
+  <div class="py-5"></div>
+  <div class="container text-center py-5">
+    <h1 class="">
+      Our team is at the intersection of education and design.
+    </h1>
+    <h6 class="">
+      HOPE Organization is a non-profit Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit. Aliquam quis odio non risus pellentesque interdum vitae
+      id turpis. In eu tempus velit. Nunc ac felis et ipsum suscipit iaculis nec
+      nec purus.
+    </h6>
+    <a href="" class="">
+      <button type="button" class="btn btn-outline-dark px-5">
+        Join Us
+      </button>
+    </a>
+  </div>
+  <div class="container">
+    <div class="card-deck">
+      {{ range.Pages }}
+      <div class="card">
+        <img
+          src="{{ .Params.boardProfile }}"
+          alt=""
+          class="card-img-top rounded"
+        />
+        <div class="card-body">
+          <div class="py-1 bg-sky"></div>
+          <p class="text-small text-uppercase">{{ .Params.boardTitle }}</p>
+          <h2 class="card-title">{{ .Params.boardName }}</h2>
+          <h6 class="card-text text-muted">{{ .Params.boardDesc }}</h6>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+  <div class="py-5"></div>
+</div>
+
+<div class="container text-center">
+  <div class="py-5"></div>
+  <h1 class="">
+    Thank you to our partners who support <br />
+    H.O.P.E. Organization
+  </h1>
+  <div class="py-4"></div>
+</div>
+
+<div class="container">
+  <div class="card-deck">
+    <div class="card border-0">
+      <a href="https://bacaworld.org/" target="_blank" class="">
+        <img
+          src="/img/partners/bacalogo.png"
+          alt=""
+          class="card-img border-o"
+        />
+      </a>
+    </div>
+    <div class="card border-0">
+      <a href="https://www.ranchocampanahigh.us/" target="_blank" class="">
+        <img
+          src="/img/partners/rchslogo.png"
+          alt=""
+          class="card-img border-o"
+        />
+      </a>
+    </div>
+    <div class="card border-0">
+      <a href="https://805.foundation/" target="_blank" class="">
+        <img src="/img/partners/805logo.png" alt="" class="card-img border-o" />
+      </a>
+    </div>
+  </div>
+  <div class="py-5"></div>
+</div>
+
+{{ end }}

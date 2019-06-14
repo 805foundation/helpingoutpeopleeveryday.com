@@ -9,43 +9,60 @@ body {
   border-width: 0em;
 }
 
-.bg-hope {
+.bg-alpha {
   background-color: #43c4ef;
 }
-.bg-blue{
+.bg-beta{
 background-color: #449CBA;
 }
 .bg-sky{
 background-color: #9CDEF4;
 }
+.bg-transparent{
+  opacity: 1;
 
-.text-hope {
+}
+
+.text-alpha {
   color: #262626;
 }
-.text-hope:hover {
+.text-alpha:hover {
   color: #43c4ef;
   transition-duration: 0.6s;
 }
 
-.btn-hope {
+.btn-alpha {
   border-width: 1px;
   border-color: #ffffff;
   background-color: #ffffff;
   color: #4d4d4d;
 }
-.btn-hope:hover {
+.btn-alpha:hover {
   border-width: 1px;
   border-color: #43c4ef;
   background-color: #43c4ef;
   color: #ffffff;
 }
-.btn-outline-hope {
+.btn-beta{
+  border-width: 1px;
+  border-color: #43c4ef;
+  background-color: #43c4ef;
+  color: #ffffff
+}
+.btn-beta:hover{
+  border-width: 1px;
+  border-color: #252727;
+  background-color: #252727;
+  color: #ffffff
+}
+
+.btn-outline-alpha {
   border-width: 1px;
   border-color: #43c4ef;
   background-color: transparent;
   color: #43c4ef;
 }
-.btn-outline-hope:hover {
+.btn-outline-alpha:hover {
   background-color: #43c4ef;
   color: #ffffff;
   transition-duration: 0.5s;
@@ -66,4 +83,22 @@ background-color: #9CDEF4;
 .img-clients:hover{
   filter: grayscale(0%);
   transition-duration: 0.6s;
+}
+
+body, html {
+  height: 100%;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('../img/masthead/background.png');
+
+  /* Full height */
+  height: 50%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
